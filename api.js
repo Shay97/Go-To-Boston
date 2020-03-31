@@ -1,5 +1,5 @@
 
-var myurl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=food&location=boston&limit=50&sort_by=rating";
+var myurl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?categories=active,Alll&location=boston&limit=50&sort_by=rating";
 
 $.ajax({
    url: myurl,
