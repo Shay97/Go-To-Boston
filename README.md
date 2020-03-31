@@ -1,2 +1,2 @@
-No Go Boston
+Go To Boston
 Web Dev Final Project
