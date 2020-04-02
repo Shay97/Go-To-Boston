@@ -1,10 +1,9 @@
-
 var myurl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?categories=active,Alll&location=boston&limit=50&sort_by=rating";
 
 $.ajax({
    url: myurl,
    headers: {
-    'Authorization':'Bearer UUbd_KTdibB4ILSUaJDJkpc989w9clfRHeGI9OB_2ZZd0OpB9Rw9V7YjxXm8gWHV1SUrO5tb4bAxE3ZO8TPcCU40Ee4wszEPJSWJvVg7VoJIw5pag8tGA8BujT2CXnYx',
+    'Authorization':'tWEsui8SRGTz82u2yHiNvD4olIVNTONr2aSZYoJb117rRGa0AQKW8b3_s9HNhFLd2vcbvwMgRtdoOfEL1h76n95IqZgRqPaZws2fR9OUXw7JVEYeE0-8QAWWeXeGXnYx',
 },
    method: 'GET',
    dataType: 'json',
@@ -31,8 +30,8 @@ $.ajax({
                var state = item.location.state;
                var zipcode = item.location.zip_code;
                // Append our result into our page
-               $('#results').append('<div id="' + id + '" style="margin-top:50px;margin-bottom:50px;"><img src="' + image + '" style="width:200px;height:150px;"><br>We found <b>' + name + '</b> (' + alias + ')<br>Business ID: ' + id + '<br> Located at: ' + address + ' ' + city + ', ' + state + ' ' + zipcode + '<br>The phone number for this business is: ' + phone + '<br>This business has a rating of ' + rating + ' with ' + reviewcount + ' reviews.</div>');
-         });
+               $('#block'+i).append('<div id="' + id + '" style="margin-top:50px;margin-bottom:50px;"><img src="' + image + '" style="width:250px;height:250px;"><br>We found <b>' + name + '</b> <br> Located at: ' + address + ' ' + city + ', ' + state + ' ' + zipcode + '<br>The phone number for this business is: ' + phone + '<br>This business has a rating of ' + rating + ' with ' + reviewcount + ' reviews.</div>');
+         });    
        } else {
            // If our results are 0; no businesses were returned by the JSON therefor we display on the page no results were found
            $('#results').append('<h5>We discovered no results!</h5>');

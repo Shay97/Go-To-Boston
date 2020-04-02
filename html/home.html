@@ -28,13 +28,11 @@
 
             <div id="search_container">
                 <form action="/action_page.php">
-                    <input type="text" placeholder="Search.." name="search">
+                    <input type="text" placeholder="Search for an activity" name="search">
                     <button type="submit">Submit</button>
                 </form>
             </div>
         </header>
-
-        <button id="submit" type="submit">Submit</button> 
 
         <div class="container">
             <div class="row">
@@ -59,31 +57,9 @@
                   </div>
                 </div>
 
-        <script type="text/javascript">
-
-          const button = document.getElementById('submit').onclick = function() {
-              // Your existing code unmodified...
-            var iDiv = document.createElement('div');
-            var iDivName = document.createElement('h3');
-            var iDivPara = document.createElement('p');
-            iDiv.appendChild(iDivName);
-            iDiv.appendChild(iDivPara);
-            iDiv.id = 'block';
-            iDiv.className = 'card';
-            document.getElementsByClassName('container')[0].appendChild(iDiv);
-
-            // Now create and append to iDiv
-            var innerDiv = document.createElement('div');
-            innerDiv.className = 'block-2';
-
-            // The variable iDiv is still good... Just append to it.
-            iDiv.appendChild(innerDiv);
-          };
-            
-        </script>
-
+        <script src="/js/display_data.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="api.js"></script>
+        <script src="/js/api.js"></script>
 
         <footer>
             <p id="copyright">This web application was made by students of Wentworth Institute of Technology. Please contact <span class="highlight"><strong>EMAIL</strong></span> with any inquiries.</p>
