@@ -36,7 +36,14 @@
 
         <button id="submit" type="submit">Submit</button> 
 
-        <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="results"></div>
+                </div>
+            </div>
+        </div>
+
                 <div class="column">
                   <div class="card">
                         <div id="images">
@@ -63,7 +70,7 @@
             iDiv.appendChild(iDivPara);
             iDiv.id = 'block';
             iDiv.className = 'card';
-            document.getElementsByTagName('div')[0].appendChild(iDiv);
+            document.getElementsByClassName('container')[0].appendChild(iDiv);
 
             // Now create and append to iDiv
             var innerDiv = document.createElement('div');
@@ -74,6 +81,9 @@
           };
             
         </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="api.js"></script>
 
         <footer>
             <p id="copyright">This web application was made by students of Wentworth Institute of Technology. Please contact <span class="highlight"><strong>EMAIL</strong></span> with any inquiries.</p>
