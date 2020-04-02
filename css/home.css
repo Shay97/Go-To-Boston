@@ -1,0 +1,180 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background: url('/image/backgroundabstract.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-attachment: fixed;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.current a{
+    color: #FE0000FF;
+    font-weight: bold;
+}
+
+ul{
+    margin: 15px;
+    padding: 0px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #e62b1e;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+}
+
+input:focus {
+    outline:none;
+}
+
+.checked {
+    color: orange;
+  }
+
+#banner{
+    text-align: center;
+    background: url('../image/boston_skyline.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    margin: 0%;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#navigation{
+    background-color: #6DAC4FFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#navigation li{
+    display: inline-block;
+}
+
+#navigation a{
+    text-decoration: none;
+    display: block;
+    color: #EFEFE8FF;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#navigation a:hover{
+    color: #0A5E2AFF;;
+}
+
+#navigation a.current{
+    background-color: #FE0000FF;
+}
+
+#search_container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+  
+#search_container input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    color: #A4A3A2;
+  }
+
+#search_container ::placeholder{
+    color: #dddddd;
+}
+  
+#search_container button {
+    text-align: center;
+    padding: 10px;
+    background-color: #6DAC4FFF;
+    color: #EFEFE8FF;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+  
+#search_container button:hover {
+    background-color: #0A5E2AFF;
+}
+
+#placeholder{
+    width: auto;
+    height: 150px;
+}
+
+/* Float four columns side by side */
+.column {
+    display: inline-block;
+    width: 20%;
+    padding: 0 10px;
+    margin: 30px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#block{
+    width: 20%;
+    display: inline-block;
+    margin: 20px;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+footer{
+    background-color: #6DAC4FFF;
+    color: #EFEFE8FF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
