@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a2b4d60a67.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewPort" content="width=device-width">
+        <meta name="description" content="No Go Boston's web application.">
+        <meta name="keywords" content="food, bad food, no go, nogo, boston">
+        <meta name="author" content="">
+        <meta charset="utf-8">
+        <title>No Go Boston | Home</title>
+        <link rel="stylesheet" href="/css/home.css">
+
+    </head>
+    
+    <body>
+        <header>
+           <section id="banner">
+           </section>
+
+           <nav id="navigation">
+                <ul>
+                    <li class="current"><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">TEAM</a></li>
+                </ul>
+            </nav>
+
+            <div id="search_container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </header>
+
+        <button id="submit" type="submit">Submit</button> 
+
+        <div class="row">
+                <div class="column">
+                  <div class="card">
+                        <div id="images">
+                        <img id="placeholder" src="/image/placeholder.jpg" alt="">
+                        </div>
+                        <h3>title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sit atque minus error cumque fugit vero molestiae, ducimus animi alias iusto quis molestias soluta dignissimos illo! Quos corporis adipisci earum.</p>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                  </div>
+                </div>
+
+        <script type="text/javascript">
+
+          const button = document.getElementById('submit').onclick = function() {
+              // Your existing code unmodified...
+            var iDiv = document.createElement('div');
+            var iDivName = document.createElement('h3');
+            var iDivPara = document.createElement('p');
+            iDiv.appendChild(iDivName);
+            iDiv.appendChild(iDivPara);
+            iDiv.id = 'block';
+            iDiv.className = 'card';
+            document.getElementsByTagName('div')[0].appendChild(iDiv);
+
+            // Now create and append to iDiv
+            var innerDiv = document.createElement('div');
+            innerDiv.className = 'block-2';
+
+            // The variable iDiv is still good... Just append to it.
+            iDiv.appendChild(innerDiv);
+          };
+            
+        </script>
+
+        <footer>
+            <p id="copyright">This web application was made by students of Wentworth Institute of Technology. Please contact <span class="highlight"><strong>EMAIL</strong></span> with any inquiries.</p>
+        </footer>
+
+    </body>
+</html>
