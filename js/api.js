@@ -3,7 +3,8 @@ var myurl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/busines
 $.ajax({
    url: myurl,
    headers: {
-    'Authorization':'tWEsui8SRGTz82u2yHiNvD4olIVNTONr2aSZYoJb117rRGa0AQKW8b3_s9HNhFLd2vcbvwMgRtdoOfEL1h76n95IqZgRqPaZws2fR9OUXw7JVEYeE0-8QAWWeXeGXnYx',
+    'Authorization':'Bearer tWEsui8SRGTz82u2yHiNvD4olIVNTONr2aSZYoJb117rRGa0AQKW8b3_s9HNhFLd2vcbvwMgRtdoOfEL1h76n95IqZgRqPaZws2fR9OUXw7JVEYeE0-8QAWWeXeGXnYx',
+
 },
    method: 'GET',
    dataType: 'json',
@@ -38,3 +39,4 @@ $.ajax({
        }
    }
 });    
+
