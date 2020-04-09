@@ -163,6 +163,69 @@ input:focus {
   }
 }
 
+/* Start of about page CSS */
+
+.about{
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "purpose email"
+    "para1 image_about"
+    "why image_about"
+    "para2 image_about";
+}
+
+#purpose{
+    grid-area: purpose;
+}
+
+#email{
+    grid-area: email;
+    text-align: center;
+    padding: 10px;
+    background-color: #6DAC4FFF;
+    color: #EFEFE8FF;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+#email:hover {
+    background-color: #0A5E2AFF;
+}
+
+#para1{
+    grid-area: para1;
+}
+
+#why{
+    grid-area: why;
+}
+
+#para2{
+    grid-area: para2;
+    margin-top: -80px;
+}
+
+#image_about{
+    width: auto;
+    height: 500px;
+}
+
+#image_container{
+    overflow: hidden;
+    grid-area: image_about;
+}
+
+/* End of about page CSS */
+
 
 footer{
     background-color: #6DAC4FFF;
