@@ -21,3 +21,12 @@ for (i = 0; i < 50; i++) {
     // The variable iDiv is still good... Just append to it.
     iDiv.appendChild(innerDiv);
 }
+
+function clear_elements(){
+    $("#results").empty();
+
+    var z;
+    for(z = 0; z < 50; z++){
+        $("#block"+ z ).empty();
+    }
+}
